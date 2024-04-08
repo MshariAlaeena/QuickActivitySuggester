@@ -32,7 +32,7 @@ app.post("/", async (req, res) => {
     }));
   } catch (error) {
     console.error("Failed to make request:", error.message);
-    res.render("solution.ejs", {
+    res.render("index.ejs", {
       error: "No activities that match your criteria.",
     });
   }
